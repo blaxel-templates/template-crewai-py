@@ -3,9 +3,7 @@ from contextlib import asynccontextmanager
 from logging import getLogger
 
 import uvicorn
-from blaxel.instrumentation.span import SpanManager
 from fastapi import FastAPI
-from fastapi.responses import StreamingResponse
 from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 
 from server.error import init_error_handlers
