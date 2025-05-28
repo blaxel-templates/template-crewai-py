@@ -20,7 +20,7 @@ A template implementation of a conversational agent using CrewAI and GPT-4. This
 - **[UV](https://github.com/astral-sh/uv):** An extremely fast Python package and project manager, written in Rust
 - **[Blaxel CLI](https://docs.blaxel.ai/Get-started):** Ensure you have the Blaxel CLI installed. If not, install it globally:
   ```bash
-  curl -fsSL https://raw.githubusercontent.com/beamlit/toolkit/main/install.sh | BINDIR=$HOME/.local/bin sh
+  curl -fsSL https://raw.githubusercontent.com/blaxel-ai/toolkit/main/install.sh | BINDIR=$HOME/.local/bin sh
   ```
 - **Blaxel login:** Login to Blaxel platform
   ```bash
@@ -32,7 +32,7 @@ A template implementation of a conversational agent using CrewAI and GPT-4. This
 **Clone the repository and install dependencies:**
 
 ```bash
-git clone https://github.com/beamlit/template-crewai-py.git
+git clone https://github.com/blaxel-ai/template-crewai-py.git
 cd template-crewai-py
 uv sync
 ```
