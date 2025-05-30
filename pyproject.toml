@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "asgi-correlation-id>=4.3.4",
-    "blaxel[crewai]==0.1.18",
+    "blaxel[crewai]==0.1.20",
     "fastapi[standard]>=0.115.12",
     "nest-asyncio>=1.6.0",
     "rich>=13.9.4",
