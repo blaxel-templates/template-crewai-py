@@ -5,8 +5,7 @@ nest_asyncio.apply()
 
 from typing import AsyncGenerator
 
-from blaxel.models import bl_model
-from blaxel.tools import bl_tools
+from blaxel.crewai import bl_model, bl_tools
 from crewai import Agent, Crew, Task
 from crewai.tools import tool
 
@@ -16,9 +15,10 @@ def weather(city: str) -> str:
     """Get the weather in a given city"""
     return f"The weather in {city} is sunny"
 
+
 async def agent(input: str) -> AsyncGenerator[str, None]:
-    tools = await bl_tools(["blaxel-search"]).to_crewai() + [weather]
-    model = await bl_model("sandbox-openai").to_crewai()
+    tools = await bl_tools(["blaxel-search"]) + [weather]
+    model = await bl_model("sandbox-openai")
 
     agent = Agent(
         role="Weather Researcher",
