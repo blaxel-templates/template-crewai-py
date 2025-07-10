@@ -3,7 +3,7 @@ from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
-from agent import agent
+from ..agent import agent
 
 router = APIRouter()
 
