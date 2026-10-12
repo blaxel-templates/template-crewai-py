@@ -27,4 +27,4 @@ select = ["E", "F"]
 
 [tool.uv]
 # blaxel 0.2.x predates mcp 2
-constraint-dependencies = ["fsspec>=2026.6.0", "mcp<2"]
+constraint-dependencies = ["fsspec>=2026.6.0", "mcp<2", "pdfminer.six>=20251230"]
