@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "asgi-correlation-id>=4.3.4",
-    "blaxel[crewai,telemetry]==0.2.39",
+    "blaxel[crewai,telemetry]==0.2.58",
     "fastapi[standard]>=0.115.12",
     "nest-asyncio>=1.6.0",
     "rich>=13.9.4",
@@ -24,3 +24,7 @@ skip-magic-trailing-comma = false
 
 [tool.ruff.lint]
 select = ["E", "F"]
+
+[tool.uv]
+# blaxel 0.2.x predates mcp 2
+constraint-dependencies = ["mcp<2"]
