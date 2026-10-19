@@ -33,5 +33,5 @@ async def agent(input: str) -> AsyncGenerator[str, None]:
         tasks=[Task(description="Find weather", expected_output=input, agent=agent)],
         verbose=True,
     )
-    result = crew.kickoff()
+    result = await crew.kickoff_async()
     yield result.raw
