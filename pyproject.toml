@@ -6,7 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "asgi-correlation-id>=4.3.4",
-    "blaxel[crewai,telemetry]==0.2.58",
+    "blaxel[crewai,telemetry]==0.4.18",
     "fastapi[standard]>=0.115.12",
     "nest-asyncio>=1.6.0",
     "rich>=13.9.4",
@@ -26,5 +26,4 @@ skip-magic-trailing-comma = false
 select = ["E", "F"]
 
 [tool.uv]
-# blaxel 0.2.x predates mcp 2
-constraint-dependencies = ["fsspec>=2026.6.0", "mcp<2", "pdfminer.six>=20251230"]
+constraint-dependencies = ["fsspec>=2026.6.0", "pdfminer.six>=20251230"]

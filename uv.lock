@@ -14,7 +14,6 @@ resolution-markers = [
 [manifest]
 constraints = [
     { name = "fsspec", specifier = ">=2026.6.0" },
-    { name = "mcp", specifier = "<2" },
     { name = "pdfminer-six", specifier = ">=20251230" },
 ]
 
@@ -393,7 +392,7 @@ wheels = [
 
 [[package]]
 name = "blaxel"
-version = "0.2.58"
+version = "0.4.18"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "attrs" },
@@ -409,9 +408,9 @@ dependencies = [
     { name = "tomli" },
     { name = "websockets" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ed/60/0b4f71b7be7cf3b5b5913c20b3e21a0795a61b8443fdce2c5a577f4b8f84/blaxel-0.2.58.tar.gz", hash = "sha256:1a21c0de2be50f6c848571261bc2f63cbb8ff9dbf56d0f8d12cc7804eb924498", size = 452034, upload-time = "2026-06-18T18:00:52.306Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/7e/76/63215ef89ee9ed2ec8726b7171a0ec60cf7bf69b606ebcea7ce85336c18f/blaxel-0.4.18.tar.gz", hash = "sha256:77f23b3b5771e0bfc512c94692c8d1b6d10845d7cac1ae24a66bedd08c25a146", size = 628412, upload-time = "2026-10-15T22:04:41.255Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f4/85/1ae5efb2266eaf2f075a9a1cb14c00dad16c91d6029455f476b2d25f11a6/blaxel-0.2.58-py3-none-any.whl", hash = "sha256:9ec0b61de1503bba960c8f57ad7d9906b1a8a7c263210efe5075cad374b0239f", size = 692646, upload-time = "2026-06-18T18:00:53.858Z" },
+    { url = "https://files.pythonhosted.org/packages/67/fb/8594a0377742f1918994f067261ad160b32d18ef9dff0912c9a063a4152c/blaxel-0.4.18-py3-none-any.whl", hash = "sha256:a6ed0c49798c21933e842cb9baba268a242bf7a4db6ecd411f48457f47933095", size = 896951, upload-time = "2026-10-15T22:04:39.267Z" },
 ]
 
 [package.optional-dependencies]
@@ -4822,7 +4821,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "asgi-correlation-id", specifier = ">=4.3.4" },
-    { name = "blaxel", extras = ["crewai", "telemetry"], specifier = "==0.2.58" },
+    { name = "blaxel", extras = ["crewai", "telemetry"], specifier = "==0.4.18" },
     { name = "fastapi", extras = ["standard"], specifier = ">=0.115.12" },
     { name = "nest-asyncio", specifier = ">=1.6.0" },
     { name = "rich", specifier = ">=13.9.4" },
